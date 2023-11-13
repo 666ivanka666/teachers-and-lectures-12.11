@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 import { TeacherService } from './teacher.service';
 import { Teacher } from './type';
-import { IdDto, NameDto } from 'src/common/decorators';
+import { IdDto } from 'src/common/decorators';
 import { TeacherDto } from './dto';
 
 @Controller('teacher')
