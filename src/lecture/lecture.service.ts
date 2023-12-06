@@ -11,7 +11,6 @@ export class LectureService {
   insertLecture(name: string, description: string, teacherId: string): string {
     const lectureId = uuidv4();
     this.teacherService.findTeacher(teacherId);
-
     this.lecture.push(new Lecture(lectureId, name, description, teacherId));
     return lectureId;
   }
